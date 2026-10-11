@@ -4675,60 +4675,36 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:foreground ,monokai-256-background))))
 
    `(org-level-1
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :height ,monokai-height-plus-4
-                                :foreground ,monokai-orange))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :height ,monokai-height-plus-4
-                                     :foreground ,monokai-256-orange))))
+     ((,monokai-class (:inherit outline-1))
+      (,monokai-256-class (:inherit outline-1))))
 
    `(org-level-2
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :height ,monokai-height-plus-3
-                                :foreground ,monokai-green))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :height ,monokai-height-plus-3
-                                     :foreground ,monokai-256-green))))
+     ((,monokai-class (:inherit outline-2))
+      (,monokai-256-class (:inherit outline-2))))
 
    `(org-level-3
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :height ,monokai-height-plus-2
-                                :foreground ,monokai-blue))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :height ,monokai-height-plus-2
-                                     :foreground ,monokai-256-blue))))
+     ((,monokai-class (:inherit outline-3))
+      (,monokai-256-class (:inherit outline-3))))
 
    `(org-level-4
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :height ,monokai-height-plus-1
-                                :foreground ,monokai-yellow))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :height ,monokai-height-plus-1
-                                     :foreground ,monokai-256-yellow))))
+     ((,monokai-class (:inherit outline-4))
+      (,monokai-256-class (:inherit outline-4))))
 
    `(org-level-5
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :foreground ,monokai-cyan))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :foreground ,monokai-256-cyan))))
+     ((,monokai-class (:inherit outline-5))
+      (,monokai-256-class (:inherit outline-5))))
 
    `(org-level-6
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :foreground ,monokai-green))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :foreground ,monokai-256-green))))
+     ((,monokai-class (:inherit outline-6))
+      (,monokai-256-class (:inherit outline-6))))
 
    `(org-level-7
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :foreground ,monokai-red))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :foreground ,monokai-256-red))))
+     ((,monokai-class (:inherit outline-7))
+      (,monokai-256-class (:inherit outline-7))))
 
    `(org-level-8
-     ((,monokai-class (:inherit ,monokai-pitch
-                                :foreground ,monokai-blue))
-      (,monokai-256-class (:inherit ,monokai-pitch
-                                     :foreground ,monokai-256-blue))))
+     ((,monokai-class (:inherit outline-8))
+      (,monokai-256-class (:inherit outline-8))))
 
    `(org-link
      ((,monokai-class (:foreground ,monokai-blue
@@ -4912,36 +4888,60 @@ Also affects 'linum-mode' background."
 
    ;; outline
    `(outline-1
-     ((,monokai-class (:inherit org-level-1))
-      (,monokai-256-class (:inherit org-level-1))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :height ,monokai-height-plus-4
+                                :foreground ,monokai-orange))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :height ,monokai-height-plus-4
+                                     :foreground ,monokai-256-orange))))
 
    `(outline-2
-     ((,monokai-class (:inherit org-level-2))
-      (,monokai-256-class (:inherit org-level-2))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :height ,monokai-height-plus-3
+                                :foreground ,monokai-green))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :height ,monokai-height-plus-3
+                                     :foreground ,monokai-256-green))))
 
    `(outline-3
-     ((,monokai-class (:inherit org-level-3))
-      (,monokai-256-class (:inherit org-level-3))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :height ,monokai-height-plus-2
+                                :foreground ,monokai-blue))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :height ,monokai-height-plus-2
+                                     :foreground ,monokai-256-blue))))
 
    `(outline-4
-     ((,monokai-class (:inherit org-level-4))
-      (,monokai-256-class (:inherit org-level-4))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :height ,monokai-height-plus-1
+                                :foreground ,monokai-yellow))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :height ,monokai-height-plus-1
+                                     :foreground ,monokai-256-yellow))))
 
    `(outline-5
-     ((,monokai-class (:inherit org-level-5))
-      (,monokai-256-class (:inherit org-level-5))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :foreground ,monokai-cyan))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :foreground ,monokai-256-cyan))))
 
    `(outline-6
-     ((,monokai-class (:inherit org-level-6))
-      (,monokai-256-class (:inherit org-level-6))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :foreground ,monokai-green))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :foreground ,monokai-256-green))))
 
    `(outline-7
-     ((,monokai-class (:inherit org-level-7))
-      (,monokai-256-class (:inherit org-level-7))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :foreground ,monokai-red))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :foreground ,monokai-256-red))))
 
    `(outline-8
-     ((,monokai-class (:inherit org-level-8))
-      (,monokai-256-class (:inherit org-level-8))))
+     ((,monokai-class (:inherit ,monokai-pitch
+                                :foreground ,monokai-blue))
+      (,monokai-256-class (:inherit ,monokai-pitch
+                                     :foreground ,monokai-256-blue))))
 
    ;; parenface
    `(paren-face
